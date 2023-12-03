@@ -1,0 +1,58 @@
+<!--
+Name: Ryan Politis
+Email: Ryan_Politis@student.uml.edu
+File: index.html
+Date: 11/27/23
+GUI Assignment: Implement a multiplication table using forms and javascript
+What the file does: HTML file that displays the structure of the page. Takes inputs and stores them, contains the divs for form and table.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Wrapper div that surrounds all content -->
+    <div id="wrapper">
+      <!-- Title div for title at top of webpage -->
+      <div id="title">
+        <h1>Multiplication Table</h1>
+      </div>
+      <!-- Main form that keeps track of all inputs and error message locations -->
+      <form id="input_form">
+        <p>
+          <label for="min_x">Minimum X-value (-50 to 50):</label>
+          <input type="text" id="min_x" name="min_x">
+        </p>
+        <p>
+          <label for="max_x">Maximum X-value (-50 to 50):</label>
+          <input type="text" id="max_x" name="max_x">
+        </p>
+        <p>
+          <label for="min_y">Minimum Y-value (-50 to 50):</label>
+          <input type="text" id="min_y" name="min_y">
+        </p>
+        <p>
+          <label for="max_y">Maximum Y-value (-50 to 50):</label>
+          <input type="text" id="max_y" name="max_y">
+        </p>
+        <p>
+          <input class="submit" type="submit" value="Submit">
+        <p>
+      </form>
+      <!-- Div for bottom of inputs and errors -->
+      <div id="bottom">
+        <h1></h1>
+      </div>
+      <!-- Div that surrounds dynamic multiplication table -->
+      <div id="tbl">
+        <table id="multi_table"></table>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
